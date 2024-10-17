@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout - Specialized Diverge Expert</title>
+    <meta name="description" content="Checkout page for the Specialized Diverge Expert bike purchase">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <a href="./index.html">
+            <img id="navlogo" src="./logo.png" alt="BikeExpress Logo">
+        </a>
+        <div id="navbuttons">
+            <a href="./bikes.html" class="navbtn">Bikes</a>
+            <a href="./parts.html" class="navbtn">Parts</a>
+            <a href="./accessories.html" class="navbtn">Accessories</a>
+        </div>
+    </nav>
+
+    <section id="checkout-section">
+        <h1>Checkout</h1>
+        <div class="product-summary">
+            <h2>Product: Specialized Diverge Expert</h2>
+            <img src="./bike_1.png" alt="Specialized Diverge Expert" class="checkout-product-img">
+            <p>Price: 100&euro;</p>
+        </div>
+        <form id="checkout-form">
+            <h3>Customer Information</h3>
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+
+            <label for="customer-email">Email:</label>
+            <input type="email" id="customer-email" name="customer-email" required>
+
+            <label for="shipping-address">Shipping Address:</label>
+            <textarea id="shipping-address" name="shipping-address" required></textarea>
+
+            <h3>Payment Information</h3>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiration-date">Expiration Date:</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <div id="buy-buttons">
+                <button type="submit" class="btn">Complete Purchase</button>
+                <button type="button" class="btn" onclick="window.history.back();">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <label id="copytext">&copy; 2024 BikeExpress</label>
+    </footer>
+
+</body>
+</html>
